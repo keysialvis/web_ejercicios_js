@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema01</title>
+</head>
+<body>
+    
+
+    <script>
+        /*DATOS DE ENTRADA TIPO TEXTO*/
+
+        let saludo = alert("Bienvenidos a la bodega Carmencita");
+        let marcagaseosa = prompt("Ingrese nombre de la gaseosa: ");
+        /* ENTRADA DE DATOS*/
+        let precio = parseFloat(prompt("Ingrese el precio de la gaseosa:"));
+        let cantidad = parseInt(prompt("Ingrese la cantidad de gaseosas:"));
+
+        /*PROCESO DE DATOS*/
+        let total = precio * cantidad;
+
+
+        /* SALIDA DE DATOS*/
+        document.write("Resultado de compra: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Gaseosa: " + marcagaseosa + "<br>");
+        document.write("Precio S/: " + precio + "<br>");
+        document.write("Cantidad: " + cantidad + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Total S/: " + total.toFixed(2) + "<br>");
+
+    </script>
+</body>
+</html>

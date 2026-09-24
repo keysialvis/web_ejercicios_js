@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema02</title>
+</head>
+<body>
+    
+    <script>
+
+        /*DATOS DE ENTRADA TIPO TEXTO*/
+
+        let saludo = alert("Bienvenidos a la librería Carmencita");
+
+        /* ENTRADA DE DATOS 1*/
+        let precioCuaderno = parseFloat(prompt("Ingrese el precio del cuaderno:"));
+        let cantidadCuaderno = parseInt(prompt("Ingrese la cantidad de cuadernos:"));
+
+        /* ENTRADA DE DATOS 2*/
+        let precioLapicero = parseFloat(prompt("Ingrese precio del lapicero: "));
+        let cantidadLapicero = parseInt(prompt("Ingrese la cantidad de lapiceros:"));
+
+        /*PROCESO DE DATOS*/
+        let total1 = precioCuaderno * cantidadCuaderno;
+        let total2 = precioLapicero * cantidadLapicero;
+        let total = (total1 + total2);
+
+
+        /* SALIDA DE DATOS*/
+        document.write("Resultado de compra: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Precio cuaderno S/: " + precioCuaderno + "<br>");
+        document.write("Cantidad: " + cantidadCuaderno + "<br>");
+        document.write("Precio lapicero S/: " + precioLapicero + "<br>");
+        document.write("Cantidad: " + cantidadLapicero + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Total S/: " + total.toFixed(2) + "<br>");
+
+    </script>
+</body>
+</html>

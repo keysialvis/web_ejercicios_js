@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema05</title>
+</head>
+<body>
+    
+    <script>
+
+        /*Entrada de datos*/
+        let precioProducto = parseFloat(prompt("Ingrese el precio del producto:"));
+
+        // Cálculo del descuento (15%) y precio final
+        let montoDescuento = precioProducto * 0.15;
+        let precioFinal = precioProducto - montoDescuento;
+
+        /* SALIDA DE DATOS*/
+        document.write("Resultado: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Precio Producto S/: " + precioProducto + "<br>");
+        document.write("Monto de Dscto: " + montoDescuento + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Total a pagar S/: " + precioFinal.toFixed(2) + "<br>");
+    </script>
+</body>
+</html>

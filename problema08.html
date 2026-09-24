@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema08</title>
+</head>
+<body>
+    
+    <script>
+
+        /* Se emplea constante porque el valor no cmbia y esta predefinido*/
+        const KM_POR_GALON = 40;
+
+        /* Solicita kilómetros*/
+        let kilometros = parseFloat(prompt("Ingrese la cantidad de kilómetros a recorrer:"));
+
+        /* Cálculo */
+        let galonesNecesarios = kilometros / KM_POR_GALON;
+
+        
+        /* SALIDA DE DATOS*/
+        document.write("Resultado: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Para recorrer " + kilometros + " km se necesitarán aproximadamente " + galonesNecesarios.toFixed(2) + " galones de combustible.");
+    </script>
+</body>
+</html>

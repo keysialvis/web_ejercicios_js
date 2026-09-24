@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema10</title>
+</head>
+<body>
+    
+    <script>
+
+        let diasViaje = parseInt(prompt("Ingrese la cantidad de días del viaje:"));
+        let gastoDiarioAlimentacion = parseFloat(prompt("Ingrese el gasto diario en alimentación:"));
+        let gastoDiarioTransporte = parseFloat(prompt("Ingrese el gasto diario en transporte:"));
+        let gastoDiarioAlojamiento = parseFloat(prompt("Ingrese el gasto diario en alojamiento:"));
+
+        /* Cálculo de subtotales por categoría */
+        let totalAlimentacion = gastoDiarioAlimentacion * diasViaje;
+        let totalTransporte = gastoDiarioTransporte * diasViaje;
+        let totalAlojamiento = gastoDiarioAlojamiento * diasViaje;
+
+        /* Cálculo del presupuesto total*/
+        let presupuestoTotal = totalAlimentacion + totalTransporte + totalAlojamiento;
+
+        /* SALIDA DE DATOS*/
+        document.write("Resumen Gastos de viaje: " + "<br>");
+        document.write("---------------------------------------" + "<br>");
+        document.write("Gasto alimentación S/: " + gastoDiarioAlimentacion.toFixed(2) + "<br>");
+        document.write("Gasto trasnporte s/: " + gastoDiarioTransporte.toFixed(2) + "<br>");
+        document.write("Gasto alojamiento S/: " + gastoDiarioAlojamiento.toFixed(2) + "<br>");
+        document.write("---------------------------------------" + "<br>");
+        document.write("Presupusto General para el viaje S/: " + presupuestoTotal.toFixed(2) + "<br>");
+    </script>
+</body>
+</html>

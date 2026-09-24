@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema06</title>
+</head>
+<body>
+    
+    <script>
+
+        /*Entrada de datos*/
+        let cuentaTotal = parseFloat(prompt("Ingrese el monto total de la cuenta:"));
+        let cantidadPersonas = parseInt(prompt("Ingrese la cantidad de personas:"));
+
+        /*Cálculo de cuenta por persona*/
+        let pagoPorPersona = cuentaTotal / cantidadPersonas;
+
+        /* SALIDA DE DATOS*/
+        document.write("Resultado: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Cuenta total S/: " + cuentaTotal + "<br>");
+        document.write("Cant. de personas: " + cantidadPersonas + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Total a pagar S/: " + pagoPorPersona.toFixed(2) + " por persona." + "<br>");
+    </script>
+</body>
+</html>

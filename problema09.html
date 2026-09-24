@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema09</title>
+</head>
+<body>
+    
+    <script>
+        /* Solicitar monto en soles y el tipo de cambio */
+        let montoSoles = parseFloat(prompt("Ingrese el monto en soles (S/):"));
+        let tipoCambio = parseFloat(prompt("Ingrese el tipo de cambio del dólar:"));
+
+        /* Cálculo de la conversión */
+        let montoDolares = montoSoles / tipoCambio;
+
+        /* SALIDA DE DATOS*/
+        document.write("Resultado: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Monto en soles S/: " + montoSoles.toFixed(2) + "<br>");
+        document.write("Tipo de cambio: " + tipoCambio.toFixed(2) + "<br>");
+        document.write("Equivalente en: US$ " + montoDolares.toFixed(2) + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("El monto estimado para " + montoSoles.toFixed(2) + "con un tipo de cambio de " + tipoCambio.toFixed(2) + " aproximadamnete será de "+ montoDolares.toFixed(2) + " dolares." + "<br>");
+    </script>
+</body>
+</html>

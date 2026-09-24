@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema07</title>
+</head>
+<body>
+    
+    <script>
+
+        /*Ingreso de datos*/
+        let sueldoBruto = parseFloat(prompt("Ingrese el sueldo mensual bruto del trabajador:"));
+
+        /* Cálculo del descuento 13% y sueldo final*/
+        let montoDescontado = sueldoBruto * 0.13;
+        let sueldoFinal = sueldoBruto - montoDescontado;
+
+        /* SALIDA DE DATOS*/
+        document.write("Resumen del sueldo: " + "<br>");
+        document.write("-------------------------------" + "<br>");
+        document.write("Sueldo Bruto S/: " + sueldoBruto + "<br>");
+        document.write("desuento 13% S/: " + montoDescontado.toFixed(2) + "<br>");
+        document.write("Sueldo Final S/: " + sueldoFinal.toFixed(2) + "<br>");
+        document.write("-------------------------------" + "<br>");
+
+    </script>
+</body>
+</html>
